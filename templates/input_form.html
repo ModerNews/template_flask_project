@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email information</title>
+</head>
+<body>
+    <h1>Welcome new user, please fill out this small form:</h1>
+    <form action={{ url_for("templating_index") }}>
+            <div>{{ form.email.label }}: {{ form.email(class="css_class") }}</div>
+        <input type="submit">
+    </form>
+</body>
+</html>
